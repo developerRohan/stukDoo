@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-
+gem 'materialize-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
