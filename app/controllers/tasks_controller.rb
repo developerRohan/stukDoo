@@ -14,6 +14,7 @@ class TasksController < ApplicationController
   # GET /tasks/1
   # GET /tasks/1.json
   def show
+    redirect_to tasks_path
   end
 
   # GET /tasks/new
