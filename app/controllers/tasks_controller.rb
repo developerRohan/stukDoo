@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   before_action :authenticate_user!
   before_action :set_task, only: [:show, :edit, :update, :destroy , :change]
+  
 
   # GET /tasks
   # GET /tasks.json
