@@ -11,9 +11,21 @@
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
+						<% if current_user %>
 						<li>
-							<a href="#">Link</a>
+							<%= link_to 'SiGnOuT',  destroy_user_session_path , method: :delete , data: {confirm: 'are you sure'} %></li>
+							<li>
+							<%= link_to 'SeTtInGs' , edit_user_registration_path %>
 						</li>
+						<% else %>
+							
+						<li>
+							<%= link_to 'SiGnUp' ,new_user_registration_path %>
+						</li>
+						<li>
+							<%= link_to 'AbOuTuS' ,about_path %>
+						</li>
+						<% end %>
 					</ul>
 				</div>
 				
